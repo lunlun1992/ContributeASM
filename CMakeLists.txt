@@ -83,8 +83,6 @@ if(WIN32)
 else()
     set(CMAKE_C_FLAGS ${CMAKE_C_FLAGS} "-g -O2 -fPIC -mavx2 -msse4.1 -fvisibility=hidden -DNDEBUG -Wno-unused-result -Wl,-Bsymbolic,-znoexecstack")
 endif()
-option (LENT_BUILD_STATIC_LIBS "enabled static library instead of shared" ON)
-option (STATIC_USE_lentenc "Use lentenc shell when choose static build" OFF)
 
 
 add_library(libCFuncs STATIC ${SOURCE} ${YASM_OBJECTS})

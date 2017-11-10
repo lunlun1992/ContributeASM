@@ -112,5 +112,6 @@ int main (int argc, char **argv) {
 	test_filter_func(lent_intra_filter_8x8_sse4, 8);
 	test_pred_func(lent_intra_pred_ang16_15_avx2, 15, 16, 0);
 
+	printf("All tests passed!\n");
     return 0;
 }

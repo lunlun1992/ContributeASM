@@ -7,5 +7,5 @@ fi
 
 mkdir -p generate
 cd generate
-cmake -G "$1" ../.. && ccmake ../..
+cmake -G "$1" ../..
 cd ..
